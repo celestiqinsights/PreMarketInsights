@@ -1,9 +1,9 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 
 jobs:
   deploy:
@@ -21,6 +21,7 @@ jobs:
           echo "premarketinsights.in" > docs/CNAME
 
       - name: Commit and push changes
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged
         run: |
           git config --local user.email "premarketinsights@gmail.com"
           git config --local user.name "Celestiq Insights"
