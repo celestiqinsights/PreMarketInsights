@@ -157,7 +157,7 @@ function submitForm() {
 
   $.ajax({
     type: 'POST',
-    url: 'https://formsubmit.co/premarketinsights@gmail.com',
+    url: '026a466755ef72ad351954be3cdac700',
     data: formData,
     processData: false,
     contentType: false,
