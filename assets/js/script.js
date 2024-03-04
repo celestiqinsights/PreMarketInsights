@@ -27,36 +27,36 @@ $(document).ready(function () {
   });
 
   // Function to update the active class based on scroll position
-  function updateActiveNav() {
-    var scrollPosition = $(document).scrollTop();
-    var headerHeight = $("#header").outerHeight(); // Get the height of the header
+function updateActiveNav() {
+  var scrollPosition = $(document).scrollTop();
+  var headerHeight = $("#header").outerHeight(); // Get the height of the header
 
-    var foundActive = false; // Flag to track if any section is in view
+  var foundActive = false; // Flag to track if any section is in view
 
-    // Loop through each navigation link and find the corresponding section
-    $(".navbar-nav li[data-anchor]").each(function () {
-      var sectionId = $(this).data("anchor");
-      var section = $("#" + sectionId);
+  // Loop through each navigation link and find the corresponding section
+  $(".navbar-nav li[data-anchor]").each(function () {
+    var sectionId = $(this).data("anchor");
+    var section = $("#" + sectionId);
 
-      if (section.length) {
-        var sectionTop = section.offset().top - headerHeight - 100;
-        var sectionBottom = sectionTop + section.outerHeight();
+    if (section.length) {
+      var sectionTop = section.offset().top - headerHeight - 100;
+      var sectionBottom = sectionTop + section.outerHeight();
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-          // This section is in view, update the active class
-          $(".navbar-nav li").removeClass("active");
-          $(this).addClass("active");
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        // This section is in view, update the active class
+        $(".navbar-nav li").removeClass("active");
+        $(this).addClass("active");
 
-          foundActive = true;
-        }
+        foundActive = true;
       }
-    });
-
-    // If no section is in view, remove the active class
-    if (!foundActive) {
-      $(".navbar-nav li").removeClass("active");
     }
+  });
+
+  // If no section is in view, remove the active class
+  if (!foundActive) {
+    $(".navbar-nav li").removeClass("active");
   }
+}
 
 
   // Initial update on page load
@@ -79,7 +79,7 @@ $(document).ready(function () {
 
     //checkContentPage();
   }
-
+  
 
   // Function to load content into #main and scroll to section
   function loadMainAndScrollToSection(sectionId) {
@@ -96,15 +96,6 @@ $(document).ready(function () {
 
     //checkContentPage();
   }
-
-  // Assuming you have an event listener for the form submission
-  $('#contactForm').submit(function (event) {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-
-    // Call your custom submitForm function
-    submitForm();
-  });
 
   function submitForm() {
     // Remove existing error classes from all form elements
@@ -170,7 +161,7 @@ $(document).ready(function () {
     $('#contactForm')[0].reset();
   });
 
-
+  
   // function checkContentPage() {
   //   setTimeout(function () {
   //     if ($('#content-page').length > 0) {
