@@ -4,7 +4,7 @@ body.modal-open {
 
 .yusj-icon {
   width: 100%;
-  max-width: 54px;
+  max-width: 64px;
 }
 
 .check-marked-list {
@@ -38,7 +38,7 @@ body.modal-open {
 
 .sub-card-heading .discount-tag {
   display: flex !important;
-  color: #18192b;
+  color: #08091d;
   font-weight: bold;
   font-size: 1.25rem;
   position: absolute;
@@ -137,8 +137,8 @@ box-shadow: 0px 11px 26px -17px rgba(13,13,13,1);
 .btn-primary,
 .btn-primary:focus {
   color: #d7ef41 !important;
-  border-color: #18192b !important;
-  background-color: #18192b !important;
+  border-color: #08091d !important;
+  background-color: #08091d !important;
 }
 
 .uppercase-text {
@@ -153,7 +153,7 @@ button:hover,
 button.active,
 .btn-primary:hover,
 .subscribeButtonO:hover {
-  color: #18192b !important;
+  color: #08091d !important;
   border-color: #d7ef41 !important;
   background-color: #d7ef41 !important;
 }
@@ -363,7 +363,7 @@ button.accordion-button {
 }
 
 button.accordion-button[aria-expanded="true"] {
-  background-color: #18192b !important;
+  background-color: #08091d !important;
   color: #d7ef41 !important;
 }
 
