@@ -4782,8 +4782,7 @@ fieldset:disabled .btn {
   display: flex;
   width: 50%;
   max-width: 300px;
-  height: 68px;
-  max-height: 70px;
+  height: 64px;
   padding-top: -0.046rem;
   padding-bottom: -0.046rem;
   margin-right: 1rem;

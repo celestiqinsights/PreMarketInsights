@@ -74,7 +74,7 @@ body.modal-open {
   height: 50%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(66, 77, 131, 0.95), rgba(66, 77, 131, 0.95)),
+  background: linear-gradient(rgb(117 88 189 / 95%), rgb(16 0 92 / 95%)),
     url(../img/illustrations/bg.png);
   z-index: -1;
 }
@@ -378,17 +378,17 @@ button.accordion-button[aria-expanded="true"] {
 
 .step-head h5 {
   max-width: fit-content;
-  padding: 3rem 2rem 5rem;
+  padding: 2rem 2rem 3rem;
   font-family: "Roboto Mono", monospace;
-  font-size: 7rem;
-  line-height: 5rem;
+  font-size: 5rem;
+  line-height: 3.5rem;
   letter-spacing: 1px;
   text-align: center;
 }
 
 .step-head h5 > span {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -406,19 +406,15 @@ button.accordion-button[aria-expanded="true"] {
   background-color: #00b6d1;
 }
 
-.how-it-works {
-  max-width: 85%;
-  margin: 0 auto;
-}
-
 .how-it-works p {
   line-height: 1.5;
 }
 
 .triangle {
+  display: none;
   position: absolute;
   top: 50%;
-  right: -30px;
+  right: -29px;
   transform: translateY(-50%);
   width: 0;
   height: 0;
@@ -446,4 +442,15 @@ button.accordion-button[aria-expanded="true"] {
 .how-it-works .card-body img {
   max-width: 64px;
   max-height: 64px;
+}
+
+@media (min-width: 1024px) {
+  .how-it-works {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  .triangle {
+    display: block;
+  }
 }
