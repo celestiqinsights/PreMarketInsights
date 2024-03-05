@@ -18,14 +18,6 @@ body.modal-open {
   background-size: 24px;
 }
 
-.how-it-works h5 {
-  font-size: 2rem;
-}
-
-.how-it-works p {
-  line-height: 1.5;
-}
-
 .sub-card-heading {
   position: relative;
   border-color: rgb(200, 186, 255) !important;
@@ -117,8 +109,10 @@ textarea {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.navbar {
-box-shadow: 0px 11px 26px -17px rgba(13,13,13,1);
+@media (min-width: 768px) {
+  .navbar {
+    box-shadow: 0px 11px 26px -17px rgba(13, 13, 13, 1);
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -147,7 +141,6 @@ box-shadow: 0px 11px 26px -17px rgba(13,13,13,1);
   word-spacing: 5px;
   text-transform: uppercase;
 }
-
 
 button:hover,
 button.active,
@@ -351,7 +344,7 @@ button.active,
   padding: 250px 50px 150px;
   font-size: 3.5rem;
   text-align: center;
-  background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+  background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
 }
 
 .accordion {
@@ -377,4 +370,80 @@ button.accordion-button[aria-expanded="true"] {
 
 .disclaimer p {
   margin-bottom: 2rem;
+}
+
+.step-head {
+  position: relative;
+}
+
+.step-head h5 {
+  max-width: fit-content;
+  padding: 3rem 2rem 5rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 7rem;
+  line-height: 5rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.step-head h5 > span {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.step-1 {
+  background-color: #fed600;
+}
+
+.step-2 {
+  background-color: #dd6e42;
+}
+
+.step-3 {
+  background-color: #00b6d1;
+}
+
+.how-it-works {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.how-it-works p {
+  line-height: 1.5;
+}
+
+.triangle {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #fed600;
+}
+
+.step-2 .triangle {
+  border-left-color: #dd6e42;
+}
+
+.how-it-works .card-body {
+  font-size: 1.5rem;
+  color: #c0c0c0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.how-it-works .card-body .step-sub-title {
+  font-weight: 900;
+}
+
+.how-it-works .card-body img {
+  max-width: 64px;
+  max-height: 64px;
 }
