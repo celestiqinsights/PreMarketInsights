@@ -4803,7 +4803,7 @@ fieldset:disabled .btn {
 
 @media (max-width: 540px) {
   .navbar-brand {
-    width: 60%;
+    width: 55%;
   }
 }
 
@@ -5118,7 +5118,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-brand {
-  color: #23242A;
+  color: #08091d;
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
@@ -9967,7 +9967,7 @@ fieldset:disabled .btn {
 }
 
 .bg-soft-primary {
-  background-color: #f1f3ff !important;
+  background-color: #f6f4f0 !important;
 }
 
 .bg-soft-secondary {
