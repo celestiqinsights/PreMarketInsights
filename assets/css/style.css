@@ -31,22 +31,22 @@ body.modal-open {
 .discount-tag {
   display: flex !important;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 120px;
+  padding: 20px;
   color: #08091d;
   font-weight: bold;
   font-size: 1.25rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #d7ef41;
-  padding: 20px;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
-  max-width: 120px;
   text-align: center;
   opacity: 0;
   transition: opacity 1s ease;
   visibility: hidden;
+  background-color: #d7ef41;
 }
 
 .discount-tag > span {
@@ -59,8 +59,8 @@ body.modal-open {
 }
 
 .wow:hover .discount-tag {
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 
 #faq-section button svg {
@@ -77,10 +77,10 @@ body.modal-open {
 }
 
 .callback::before {
-  position: absolute;
   content: "";
   width: 100%;
   height: 50%;
+  position: absolute;
   top: 0;
   left: 0;
   background: linear-gradient(rgb(117 88 189 / 95%), rgb(16 0 92 / 95%)),
@@ -127,9 +127,9 @@ textarea {
 .navbar-light .navbar-nav .nav-link {
   font-size: 1.125rem;
   font-weight: normal;
+  letter-spacing: 2px;
   color: #ddd !important;
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -185,8 +185,8 @@ button.active,
 .modal-content .modal-header {
   position: relative;
   padding: 0;
-  border: none;
   height: 230px;
+  border: none;
   background: #915eff;
   background: -moz-linear-gradient(45deg, #915eff 0%, #ff8e59 100%);
   background: -webkit-gradient(
@@ -206,10 +206,10 @@ button.active,
   position: absolute;
   top: 0;
   right: 0;
-  padding: 10px;
-  margin: 0;
   width: 50px;
   height: 50px;
+  margin: 0;
+  padding: 10px;
   z-index: 1;
   color: #fff;
   background-color: transparent;
@@ -234,21 +234,21 @@ button.active,
 .modal-content .modal-body .icon {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  font-size: 30px;
   margin: 0 auto;
   margin-bottom: 10px;
+  font-size: 30px;
+  border-radius: 50%;
 }
 
 .modal-content .modal-body h2 {
+  margin: 30px 0;
   font-weight: 700;
   color: #fff;
-  margin: 30px 0;
 }
 
 .modal-content .modal-body h4 {
-  font-size: 24px;
   margin: 1rem;
+  font-size: 24px;
 }
 
 .modal-content .modal-body h3 {
