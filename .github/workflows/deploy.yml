@@ -8,7 +8,7 @@ on:
 jobs:
   deploy:
     environment:
-        name: PMI Prod Build
+        name: 'PMI Prod Build'
     runs-on: ubuntu-latest
 
     steps:
