@@ -13,13 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Pages
-        run: |
-          mkdir -p docs
-          cp -r * docs
-          # If you have a custom domain, create a CNAME file
-          echo "premarketinsights.in" > docs/CNAME
-
       - name: Commit and push changes
         if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged
         run: |
