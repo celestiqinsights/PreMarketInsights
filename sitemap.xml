@@ -10,10 +10,6 @@
     <loc>https://www.premarketinsights.in</loc>
     <changefreq>weekly</changefreq>
   </url>
-  <url>
-    <loc>https://shop.premarketinsights.in</loc>
-    <changefreq>weekly</changefreq>
-  </url>
 
   <!-- www & non-www versions -->
   <url>
