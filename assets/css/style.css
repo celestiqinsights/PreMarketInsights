@@ -28,8 +28,9 @@ body.modal-open {
   color: #8b9dfb !important;
 }
 
-.sub-card-heading .discount-tag {
+.discount-tag {
   display: flex !important;
+  flex-direction: column;
   color: #08091d;
   font-weight: bold;
   font-size: 1.25rem;
@@ -39,7 +40,6 @@ body.modal-open {
   background-color: #d7ef41;
   padding: 20px;
   bottom: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   max-width: 120px;
@@ -47,6 +47,15 @@ body.modal-open {
   opacity: 0;
   transition: opacity 1s ease;
   visibility: hidden;
+}
+
+.discount-tag > span {
+  font-size: 8px;
+  color: #696969;
+}
+
+.sub-card-heading .discount-tag {
+  background-color: #d7ef41;
 }
 
 .wow:hover .discount-tag {
@@ -255,38 +264,34 @@ button.active,
   position: relative;
 }
 
-.ftco-degree-bg:after {
+.ftco-degree-bg:after,
+.ftco-degree-bg:before {
   content: "";
   position: absolute;
-  right: 0;
   bottom: -30px;
   overflow: visible;
   width: 50%;
   height: 60px;
   z-index: 1;
+  background-color: #fff;
+}
+
+.ftco-degree-bg:after {
+  right: 0;
   -webkit-transform: skewY(-10deg);
   -moz-transform: skewY(-10deg);
   -ms-transform: skewY(-10deg);
   -o-transform: skewY(-10deg);
   transform: skewY(-10deg);
-  background-color: #fff;
 }
 
 .ftco-degree-bg:before {
-  content: "";
-  position: absolute;
   left: 0;
-  bottom: -30px;
-  overflow: visible;
-  width: 50%;
-  height: 60px;
-  z-index: 1;
   -webkit-transform: skewY(10deg);
   -moz-transform: skewY(10deg);
   -ms-transform: skewY(10deg);
   -o-transform: skewY(10deg);
   transform: skewY(10deg);
-  background-color: #fff;
 }
 
 #loadingIndicator {
