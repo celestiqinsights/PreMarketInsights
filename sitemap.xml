@@ -37,4 +37,26 @@
     <changefreq>weekly</changefreq>
   </url>
 
+  <!-- Additional Pages with hash-based routing -->
+  <url>
+    <loc>https://premarketinsights.in/#/disclaimer</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://premarketinsights.in/#/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://premarketinsights.in/#/about-us</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://premarketinsights.in/#/404</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://premarketinsights.in/#/terms-and-condition</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>
