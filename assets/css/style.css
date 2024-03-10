@@ -364,7 +364,7 @@ button.accordion-button[aria-expanded="true"] {
   margin: 3rem 0 5rem;
 }
 
-.content-page p:last-child {
+.content-page:not(li) > p:last-child {
   margin-bottom: 5rem;
 }
 
