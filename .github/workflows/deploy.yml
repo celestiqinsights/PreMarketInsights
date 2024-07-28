@@ -22,4 +22,4 @@ jobs:
           git config --local user.name "Celestiq Insights"
           git add .
           git commit -m "Deploy to PMI"
-          git push origin main
+          git push origin release
