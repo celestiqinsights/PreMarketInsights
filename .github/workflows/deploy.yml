@@ -20,6 +20,6 @@ jobs:
         run: |
           git config --local user.email "premarketinsights@gmail.com"
           git config --local user.name "Celestiq Insights"
-          git add docs
+          git add .
           git commit -m "Deploy to PMI"
           git push origin main
