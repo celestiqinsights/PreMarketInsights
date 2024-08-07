@@ -1,0 +1,7 @@
+# robots.txt for www.premarketinsights.in
+
+User-agent: *
+Disallow: 
+
+# Sitemap URL (replace with the actual sitemap URL if available)
+Sitemap: https://www.premarketinsights.in/sitemap.xml
