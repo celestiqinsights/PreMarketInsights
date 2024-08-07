@@ -3,56 +3,51 @@
 
   <!-- Root domain and its variations -->
   <url>
-    <loc>https://premarketinsights.in</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://www.premarketinsights.in</loc>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
-
-  <!-- www & non-www versions -->
   <url>
     <loc>https://premarketinsights.in</loc>
     <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Important Pages -->
+  <url>
+    <loc>https://www.premarketinsights.in/disclaimer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.premarketinsights.in/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.premarketinsights.in</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <!-- www version -->
-  <url>
-    <loc>https://www.premarketinsights.in</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <!-- non-www version -->
-  <url>
-    <loc>https://premarketinsights.in</loc>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <!-- Additional Pages with hash-based routing -->
-  <url>
-    <loc>https://premarketinsights.in/#/disclaimer</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://premarketinsights.in/#/privacy-policy</loc>
+    <loc>https://www.premarketinsights.in/terms-and-conditions</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://premarketinsights.in/#/about-us</loc>
+    <loc>https://www.premarketinsights.in/refund-policy</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://premarketinsights.in/#/404</loc>
+    <loc>https://www.premarketinsights.in/shipping</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://premarketinsights.in/#/terms-and-conditions</loc>
+    <loc>https://www.premarketinsights.in/404</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
   </url>
 
 </urlset>
